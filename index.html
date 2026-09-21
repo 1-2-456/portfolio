@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>张标 · 大数据方向个人作品集</title>
+  <meta name="description" content="AI辅助开发 · 大数据算法分析 · 数据建模 —— 张标个人作品集" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- 数据粒子背景（Canvas） -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- ============ 左侧边栏（桌面） / 顶部导航（移动） ============ -->
+  <header class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="avatar" aria-hidden="true"><span>张</span></div>
+      <div class="brand-text">
+        <h1 class="name">张标</h1>
+        <p class="role">数据科学与大数据技术<span class="cursor">_</span></p>
+      </div>
+    </div>
+
+    <p class="slogan">深耕数据方向，<br />用数据驱动业务。</p>
+
+    <div class="skill-tags" aria-label="核心能力">
+      <span class="tag">Python数据分析</span>
+      <span class="tag">SQL数据查询</span>
+      <span class="tag">VMware</span>
+      <span class="tag">Navicat</span>
+      <span class="tag">Excel透视分析</span>
+      <span class="tag">PPT数据汇报</span>
+    </div>
+
+    <nav class="nav" id="nav" aria-label="页面导航">
+      <a href="#hero" class="active"><i>01</i><span>个人介绍</span></a>
+      <a href="#projects"><i>02</i><span>项目作品</span></a>
+      <a href="#skills"><i>03</i><span>技能栈</span></a>
+      <a href="#about"><i>04</i><span>关于我</span></a>
+      <a href="#contact"><i>05</i><span>联系方式</span></a>
+    </nav>
+
+    <div class="side-foot">
+      <a href="mailto:1175781132@qq.com" title="邮箱">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+      </a>
+      <a href="tel:14754917834" title="电话">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+    </div>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="切换到浅色主题" title="切换深浅色主题">
+      <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+
+    <button class="nav-toggle" id="navToggle" aria-label="打开导航" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="mask" id="mask" hidden></div>
+
+  <!-- ============ 右侧内容区 ============ -->
+  <main class="content">
+
+    <!-- 01 个人介绍 -->
+    <section id="hero" class="section hero">
+      <p class="hero-hello">// HELLO WORLD, I'M</p>
+      <h2 class="hero-name">张标<span class="accent">.</span></h2>
+      <h3 class="hero-title">AI 辅助开发 <em>/</em> 大数据算法分析 <em>/</em> 数据建模</h3>
+      <p class="hero-desc">
+        广州软件学院数据科学与大数据技术专业在读，深耕<b>AI辅助开发</b>、<b>大数据算法分析</b>与<b>数据建模</b>方向。
+        擅长基于 Python 生态完成全链路数据处理与算法建模，可独立实现从<b>数据清洗、特征工程到模型落地、结果输出</b>的
+        完整数据分析流程；熟悉 VMware 环境搭建、Navicat 数据库运维与 SQL 数据查询，能够用数据驱动业务问题的解决。
+      </p>
+
+      <div class="directions">
+        <div class="dir-card">
+          <span class="dir-num">D-01</span>
+          <h4>AI 辅助开发</h4>
+          <p>深耕方向之一，探索 AI 工具与数据处理、开发流程的结合应用，提升数据工作质量。</p>
+        </div>
+        <div class="dir-card">
+          <span class="dir-num">D-02</span>
+          <h4>大数据算法分析</h4>
+          <p>运用 Python 与时序预测、回归分析等算法，完成需求趋势预判与业务流程优化分析。</p>
+        </div>
+        <div class="dir-card">
+          <span class="dir-num">D-03</span>
+          <h4>数据建模</h4>
+          <p>基于协同过滤、K-Means 聚类等算法，完成推荐模型、用户画像与用户分层建模。</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b data-count="3" data-suffix="个">0</b><span>完整数据项目</span></div>
+        <div class="stat"><b data-count="6" data-suffix="项">0</b><span>核心能力</span></div>
+        <div class="stat"><b data-count="100" data-suffix="万+">0</b><span>单项目行为日志处理</span></div>
+        <div class="stat"><b data-count="5" data-suffix="大类">0</b><span>核心用户画像输出</span></div>
+      </div>
+    </section>
+
+    <!-- 02 项目作品 -->
+    <section id="projects" class="section">
+      <div class="sec-head">
+        <span class="sec-num">02</span>
+        <h2>项目作品</h2>
+        <span class="sec-line"></span>
+      </div>
+
+      <div class="filter-bar" id="filterBar" role="tablist" aria-label="项目分类筛选"></div>
+      <div class="project-list" id="projectList"></div>
+    </section>
+
+    <!-- 03 技能栈 -->
+    <section id="skills" class="section">
+      <div class="sec-head">
+        <span class="sec-num">03</span>
+        <h2>技能栈</h2>
+        <span class="sec-line"></span>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-head"><span class="skill-ico">Py</span><h4>Python 生态</h4></div>
+          <div class="skill-chips">
+            <span class="tech">Python 数据分析</span>
+            <span class="tech">Pandas</span>
+            <span class="tech">NumPy</span>
+            <span class="tech">协同过滤算法</span>
+            <span class="tech">时序预测算法</span>
+            <span class="tech">回归分析</span>
+            <span class="tech">K-Means 聚类</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head"><span class="skill-ico">DB</span><h4>数据库与 SQL</h4></div>
+          <div class="skill-chips">
+            <span class="tech">SQL 数据查询</span>
+            <span class="tech">MySQL</span>
+            <span class="tech">Navicat Premium</span>
+            <span class="tech">表结构与索引优化</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head"><span class="skill-ico">VM</span><h4>大数据环境</h4></div>
+          <div class="skill-chips">
+            <span class="tech">VMware Workstation</span>
+            <span class="tech">分布式数据分析环境搭建</span>
+            <span class="tech">多源数据整合与治理</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head"><span class="skill-ico">RPT</span><h4>数据分析与汇报</h4></div>
+          <div class="skill-chips">
+            <span class="tech">Excel 数据透视分析</span>
+            <span class="tech">PPT 数据汇报</span>
+            <span class="tech">用户画像分析报告</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 关于我 -->
+    <section id="about" class="section">
+      <div class="sec-head">
+        <span class="sec-num">04</span>
+        <h2>关于我</h2>
+        <span class="sec-line"></span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-block reveal">
+          <h4><span class="dot"></span>专业背景</h4>
+          <p>广州软件学院数据科学与大数据技术专业在读，深耕 AI 辅助开发、大数据算法分析与数据建模方向。</p>
+        </div>
+        <div class="about-block reveal">
+          <h4><span class="dot"></span>研究方向</h4>
+          <p>聚焦 AI 辅助开发、大数据算法分析与数据建模，擅长基于 Python 生态完成全链路数据处理与算法建模。</p>
+        </div>
+        <div class="about-block reveal">
+          <h4><span class="dot"></span>核心能力</h4>
+          <p>可独立实现从数据清洗、特征工程到模型落地、结果输出的完整数据分析流程；熟悉 VMware 环境搭建、Navicat 数据库管理与 SQL 数据查询，能够用数据驱动业务问题的解决。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 联系方式 -->
+    <section id="contact" class="section">
+      <div class="sec-head">
+        <span class="sec-num">05</span>
+        <h2>联系方式</h2>
+        <span class="sec-line"></span>
+      </div>
+
+      <p class="contact-lead">如果你对数据项目或技术交流感兴趣，欢迎通过以下方式联系我。</p>
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="tel:14754917834">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div><span class="c-label">Phone</span><span class="c-value">14754917834</span></div>
+        </a>
+        <a class="contact-card reveal" href="mailto:1175781132@qq.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          <div><span class="c-label">Email</span><span class="c-value">1175781132@qq.com</span></div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 张标 · Designed & Built with vanilla HTML / CSS / JS</p>
+      <p class="foot-line"><span class="accent">></span> DATA DRIVES DECISIONS<span class="blink">_</span></p>
+    </footer>
+  </main>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
